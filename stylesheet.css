@@ -149,6 +149,7 @@ span.highlight {
 .profile-ring {
   position: relative;
   width: min(260px, 60vw);
+  height: min(260px, 60vw); /* keep circle proportional on browsers without aspect-ratio support */
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: 2px dashed transparent;
@@ -184,5 +185,6 @@ span.highlight {
 
   .profile-ring {
     width: min(220px, 65vw);
+    height: min(220px, 65vw);
   }
 }
