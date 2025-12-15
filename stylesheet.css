@@ -133,3 +133,56 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.intro-table .intro-text {
+  width: 60%;
+}
+
+.intro-table .intro-photo {
+  width: 40%;
+}
+
+.profile-wrapper {
+  text-align: center;
+}
+
+.profile-ring {
+  position: relative;
+  width: min(260px, 60vw);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 2px dashed transparent;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center 80%;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .intro-table tr {
+    display: block;
+  }
+
+  .intro-table .intro-text,
+  .intro-table .intro-photo {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .intro-photo {
+    padding-top: 0 !important;
+    padding-bottom: 2.5% !important;
+  }
+
+  .profile-ring {
+    width: min(220px, 65vw);
+  }
+}
