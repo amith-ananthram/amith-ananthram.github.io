@@ -134,6 +134,53 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.paper-tags {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tag-multilingualism {
+  background-color: #6c5ce7;
+}
+
+.tag-multicultural {
+  background-color: #e17055;
+}
+
+.tag-images {
+  background-color: #0984e3;
+}
+
+.tag-videos {
+  background-color: #00b894;
+}
+
+.tag-pre-training {
+  background-color: #c0392b;
+}
+
+.tag-data-synthesis {
+  background-color: #8e44ad;
+}
+
+.tag-bias {
+  background-color: #e84393;
+}
+
+.tag-datasets {
+  background-color: #16a085;
+}
+
 .intro-table .intro-text {
   width: 60%;
 }
