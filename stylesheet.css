@@ -150,35 +150,44 @@ span.highlight {
 }
 
 .tag-multilingualism {
-  background-color: #6c5ce7;
+  background-color: #3a86ff;
 }
 
 .tag-multicultural {
-  background-color: #e17055;
+  background-color: #ff9f1c;
 }
 
 .tag-images {
-  background-color: #0984e3;
+  background-color: #ef476f;
 }
 
 .tag-videos {
-  background-color: #00b894;
+  background-color: #073b4c;
 }
 
 .tag-pre-training {
-  background-color: #c0392b;
+  background-color: #f3722c;
 }
 
 .tag-data-synthesis {
-  background-color: #8e44ad;
+  background-color: #8338ec;
 }
 
 .tag-bias {
-  background-color: #e84393;
+  background-color: #d7263d;
 }
 
 .tag-datasets {
-  background-color: #16a085;
+  background-color: #118ab2;
+}
+
+.tag-evaluation {
+  background-color: #ffd166;
+  color: #2a2a2a;
+}
+
+.tag-post-training {
+  background-color: #06d6a0;
 }
 
 .intro-table .intro-text {
