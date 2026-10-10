@@ -222,9 +222,51 @@ span.highlight {
   display: block;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.nowrap,
+.exp-org,
+.exp-dates,
+.profile-links a,
+.paper-links span {
+  white-space: nowrap;
+}
+
+/* Phones (all current iPhones are 375-440px wide in portrait) */
 @media (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a,
+  strong,
+  .papertitle,
+  .news-section .news-content {
+    font-size: 15px;
+  }
+
+  h2,
+  .news-section h2 {
+    font-size: 21px;
+  }
+
+  .name {
+    padding-top: 12px;
+    font-size: 30px;
+  }
+
+  /* stack the intro, with the photo above the name */
   .intro-table tr {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .intro-table .intro-text,
@@ -234,14 +276,68 @@ span.highlight {
     box-sizing: border-box;
   }
 
-  .intro-photo {
-    padding-top: 0 !important;
-    padding-bottom: 2.5% !important;
+  .intro-table .intro-text {
+    padding: 0 16px !important;
+  }
+
+  .intro-table .intro-photo {
+    order: -1;
+    padding: 24px 16px 0 !important;
+  }
+
+  .intro-text p,
+  .section-cell p,
+  .section-cell li {
+    line-height: 1.4;
   }
 
   .profile-ring {
-    width: min(220px, 65vw);
-    height: min(220px, 65vw);
+    width: min(180px, 50vw);
+    height: min(180px, 50vw);
+  }
+
+  .section-cell {
+    padding: 14px 16px !important;
+  }
+
+  .news-section {
+    padding: 14px 16px;
+  }
+
+  .section-cell ul {
+    padding-left: 20px;
+  }
+
+  .section-cell > :last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-links {
+    line-height: 1.8 !important;
+  }
+
+  /* two centered rows of three links */
+  .link-group {
+    display: block;
+  }
+
+  .link-group-sep {
+    display: none;
+  }
+
+  /* company, location / role / dates, each on its own line */
+  .exp-sep {
+    display: none;
+  }
+
+  .exp-org,
+  .exp-role,
+  .exp-dates {
+    display: block;
+  }
+
+  .exp-dates {
+    color: #666;
   }
 }
 
